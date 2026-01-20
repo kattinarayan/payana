@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emergent Travel – Smart Trip Planner</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">Emergent Travel</div>
+  <ul class="nav-links">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#demo">Demo</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<header class="hero">
+  <div class="hero-text">
+    <h1>Plan Your Trip. <br><span>Zero Stress.</span></h1>
+    <p>
+      Discover places, hidden spots, costs, and routes —  
+      all in one intelligent travel platform.
+    </p>
+    <button onclick="scrollToDemo()">Try Demo</button>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Travel">
+  </div>
+</header>
+
+<!-- FEATURES -->
+<section id="features" class="features">
+  <h2>Why Emergent Travel?</h2>
+  <div class="feature-grid">
+    <div class="feature-card">📍 Smart Location Planning</div>
+    <div class="feature-card">💰 Budget-Friendly Trips</div>
+    <div class="feature-card">🗺️ Maps & Hidden Places</div>
+    <div class="feature-card">🏨 Hotels & Food (Coming Soon)</div>
+  </div>
+</section>
+
+<!-- DEMO -->
+<section id="demo" class="demo">
+  <h2>Trip Planner Demo</h2>
+
+  <div class="form-box">
+    <select id="district">
+      <option value="">Select District</option>
+    </select>
+
+    <input type="number" id="days" placeholder="Number of Days">
+    <input type="number" id="budget" placeholder="Budget (₹)">
+    
+    <button onclick="generatePlan()">Generate Plan</button>
+  </div>
+
+  <div id="output" class="output"></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2>About This Startup</h2>
+  <p>
+    Emergent Travel is building a stress-free travel ecosystem —
+    from cities to villages, tourist hotspots to hidden gems.
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Emergent Travel. Demo Version.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
